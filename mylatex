@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "latexing" $1
+pdflatex $1
+rm *.log *.aux *.out
