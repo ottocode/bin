@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "creating file " $1
+cp ~/git/bin/files/standardLatex.tex $1

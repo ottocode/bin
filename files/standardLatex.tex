@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{12pt}
+\setlength{\textwidth}{17.2cm} \setlength{\textheight}{23cm}
+\setlength{\topmargin}{-2.5cm} \setlength{\headsep}{1.6cm}
+\setlength{\evensidemargin}{-.8cm}
+\setlength{\oddsidemargin}{-.8cm}
+\pagestyle{fancy}
+
+%set-up page dimentions
+\usepackage[top=1.5 in, bottom = 1.5 in ,left = 1.5 in, right = 1.5in]{geometry}
+
+\setlength{\parskip}{12pt}  % 12 pt = space between paragraphs
+\setlength{\parindent}{0pt} % 0 pt  = indentation
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{ifthen}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{psfrag}
+\usepackage{graphpap}
+\renewcommand{\P}{\text{P}}
+\newcommand{\C}{\text{C}}
+
+
+% Allows hyperlinks if compiled with pdflatex
+\usepackage{hyperref}
+\hypersetup{colorlinks}
+\usepackage{color}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\hypersetup{ colorlinks,
+                linkcolor=darkblue,
+                filecolor=darkgreen,
+                urlcolor=darkblue,
+                citecolor=darkblue }
+%hyperlink example is: \href{http://www.google.com}{google}
+
+
+%This environment establishes the header
+\newenvironment{header}[2]{
+\rhead{#1}
+\lhead{#2}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}  %use for a solid line at head
+\renewcommand{\footrulewidth}{0pt}  %use for solid line at bottom
+}
+
+
+\newcommand{\problem}[1]{\vspace{.5cm}{\Large  \textbf{#1} \\}}
+
+\begin{document}
+
+
+ 
+\header{Nicholas Otto}{second arg}
+
+
+
+%\namespace{name here}{second line here}
+hi I need to type far enough for the text to wrap around to the other side.  We are going to do this for some time now so bear with me.  Now, is it bear with me or bare with me.  Definitely the first.  I am now playing around with the settings and want the page to essentially be justified to center.
+
+%\problem{nameOrNumber}
+
+
+% %  Matrix, 1 column  % %  Add more 'c' for more columns, separate w/in row by &
+%  \[\left[ \begin{array}{c} 0 \\ 0 \end{array}\right]\]
+
+
+\end{document}
