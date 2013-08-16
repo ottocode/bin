@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "poof! a makefile!"
+cp ~/git/bin/files/makefile .
