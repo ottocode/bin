@@ -2,9 +2,9 @@
 CC=gcc
 CFLAGS=-c -Wall 
 LDFLAGS= -lm
-SOURCES=singleServerQueue.c random.c arrival.c departure.c stats.c
+SOURCES=main.c
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=hello
+EXECUTABLE=a.out
 
 all: $(SOURCES) $(EXECUTABLE)
 
