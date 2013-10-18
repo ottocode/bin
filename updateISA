@@ -1,6 +1,0 @@
-#!/bin/bash
-mylatex ~/GIT/COMP300/lab0/beta/ourmanual/manISA_0.0.tex
-git add manISA_0.0.tex manISA_0.0.pdf
-git commit -m "auto commit"
-git push origin master
-#scp ~/GIT/realAnalysis/definitions.pdf ottodownload@nicholasotto.com:~/html/math/definitions.pdf
