@@ -1,0 +1,5 @@
+#!/bin/bash
+mylatex ~/gIT/software-engineering/group/srs/*.tex
+git add .
+git commit -m "auto commit"
+git push origin master
