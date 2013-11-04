@@ -1,0 +1,44 @@
+Guide for me to rebuild Ubuntu.
+This may also work for other linux distros, but some of the particulars will be different.
+More to come as needed.
+Feel free to comment on alternate / more standard ways to do these things
+
+Install the following:
+
+sudo apt-get install vim
+sudo apt-get install git
+sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-latex-recommended
+
+
+
+Other stuff:
+1. uninstall/reinstall gnome terminal to get it to show up in launcher (Ubuntu may fix this in later patches)
+
+2. make a git directory and:
+    git clone https://github.com/ottocode/bin.git
+
+3. Add to the bottom of ~/.bashrc 
+    export PATH=$PATH:$HOME/git/bin
+    export PATH
+
+4. OUTDATED  just do "normalizeVim" (from bin)
+    create ~/.vimrc file and add
+        set expandtab
+        set tabstop=4
+        set shiftwidth=4
+        map <F2> :retab <CR> :w <CR>
+
+5. Install tor browser
+    Install the browser in the folder specified in the Exec field below
+
+6. Create a desktop icon for it, then lock it to launcher.
+    Add tor.desktop to desktop folder.  Put the following in it:
+        [Desktop Entry]
+        Name=Tor Browser
+        Exec=/home/acer/applications/tor-browser_en-US/start-tor-browser
+        StartupNotify=true
+        Terminal=false
+        Type=Application
+        Icon=/home/acer/applications/tor-browser_en-US/App/Firefox/icons/mozicon128.png
+    Anyone know where to find the actual icon?

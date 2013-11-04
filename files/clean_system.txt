@@ -3,6 +3,8 @@ du -sh *    //du gives sizes for directories, better than ls
 sudo apt-get clean
 sudo apt-get autoclean
 sudo apt-get autoremove
+
+/////DO NOT DO THIS////// (unless you really know what you are doing.  I seem to have wiped my kernel away when I did this)
 sudo apt-get remove --purge linux-image.X.X.XX-XX-generic  
     to find kernel versions to remove:
 dpkg --get-selections | grep linux-image
