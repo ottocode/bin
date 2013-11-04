@@ -1,3 +1,6 @@
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
