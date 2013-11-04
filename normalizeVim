@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "normalizing .vimrc file"
+cp ~/.vimrc ~/.old_vimrc
+cp ~/git/bin/files/vimrc ~/.vimrc
