@@ -1,0 +1,2 @@
+#!/bin/bash
+cp /media/sf_os/lab3/files/event.c /home/student/linux-3.2/kernel/event.c

@@ -1,0 +1,6 @@
+#!/bin/bash
+rm linux-firmware-image_3.2.0-lab3+-$1_amd64.deb
+rm linux-headers-3.2.0-lab3+_3.2.0-lab3+-$1_amd64.deb
+rm linux-image-3.2.0-lab3+_3.2.0-lab3+-$1_amd64.deb
+rm linux-libc-dev_3.2.0-lab3+-$1_amd64.deb
+

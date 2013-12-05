@@ -1,0 +1,7 @@
+#!/bin/bash
+cp /media/sf_os/lab3/files/unistd_64.h /home/student/linux-3.2/arch/x86/include/asm/unistd_64.h
+cp /media/sf_os/lab3/files/syscalls.h /home/student/linux-3.2/include/asm-generic/syscalls.h
+cp /media/sf_os/lab3/files/event_header.h /home/student/linux-3.2/include/linux/event_header.h
+cp /media/sf_os/lab3/files/event.c /home/student/linux-3.2/kernel/event.c
+cp /media/sf_os/lab3/files/Makefile /home/student/linux-3.2/kernel/Makefile
+cp /media/sf_os/lab3/files/main.c /home/student/linux-3.2/init/main.c
