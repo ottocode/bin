@@ -1,0 +1,13 @@
+#!/bin/bash
+### Name
+#       armcc - convert compiled ARM code
+
+### Synopsis
+#       armcc <source> <target>
+
+### Description
+#       Take compiled 32-bit ARM code and convert to what I call "readable endian-ness" then dump binary representation into file
+#       <source> and <target> are exactly what you would expect
+#       I am certainly open to learning more efficient ways to do this 
+
+xxd -c 2 -p $1 | sed 's/\(..\)\(..\)/\2\1/' | tr -d "\n" | sed 's/\(....\)\(....\)/\2\1\n/g' | xxd -r -p | xxd -b -c 4 > $2
