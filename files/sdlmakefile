@@ -1,0 +1,20 @@
+#from mrbook.org/tutorials/make/
+#basically copied the LDFLAGS and CFLAGS from test makefile untill it worked
+CC=gcc
+CFLAGS=-c -Wall -D_REENTRANT -I/usr/local/include/SDL2 -DHAVE_OPENGL -g
+LDFLAGS= -lm -Wl,-rpath,/usr/local/lib -L/usr/local/lib -lSDL2 -lpthread
+SOURCES=main.c
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=a.out
+
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $@ $(LDFLAGS) 
+
+.c.o:
+	$(CC) $< -o $@ $(CFLAGS) 
+
+clean:
+	rm -f *.o
+	rm $(EXECUTABLE)
