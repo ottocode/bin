@@ -1,9 +1,9 @@
 #!/bin/bash
 ### Name
-#       armcc - convert compiled ARM code
+#       disarm - disassemble ARM assembly
 
 ### Synopsis
-#       armcc <source> <target>
+#       disarm <source> <target>
 
 ### Description
 #       Take compiled 32-bit ARM code and convert to what I call "readable endian-ness" then dump binary representation into file
