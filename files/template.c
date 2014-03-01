@@ -3,6 +3,7 @@
  *
  *  Overall description of file
  *
+ *
  *  Last Modified: 2/14/14
  *  Contributor(s): Nicholas Otto
  */
@@ -18,7 +19,8 @@
  *
  *  returns: what it returns
  */
-int main(int argc, char **argv){
+int main(int argc, char **argv)
+{
 
     return 0;
 }

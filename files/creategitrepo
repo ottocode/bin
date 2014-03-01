@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#remove whatever is not needed
+#change names
+
+mkdir baregit.git
+cd baregit.git
+git init --bare
+
+mkdir agit.git
+cd agit.git
+git init
+git remote add origin <pathtoremote>
+#ec2 git config --global remote.origin.receivepack "git receive-pack"

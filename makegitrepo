@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#makes a script to create a git repository.
+#will likely want to change the script details
+
+cp ~/git/bin/files/creategitrepo .
