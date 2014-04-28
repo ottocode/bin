@@ -1,23 +1,23 @@
-/** File Title
+/** [File Title]
  *  ========================================================================
  *
- *  Overall description of file
+ *  [Overall description of file]
  *
  *
- *  Last Modified: 2/14/14
+ *  Last Modified: 4/14/14
  *  Contributor(s): Nicholas Otto
  */
 #include <stdio.h>
 #include <stdlib.h>
 
 
-/** Function Title 
+/** [Function Title] 
  *  --------------
- *  Description of function
+ *  [Description of function]
  *
- *  parameter1: description of parameter
+ *  [parameter1]: [description of parameter]
  *
- *  returns: what it returns
+ *  returns: [what it returns]
  */
 int main(int argc, char **argv)
 {
